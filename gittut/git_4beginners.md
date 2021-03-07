@@ -127,9 +127,9 @@ Now all your files have been committed to the Git repo.  You can check the statu
 
 We are going to make a few changes to pair of files and commit it after the changes are made:  
 
-![git add .](./img/git_add_status.png)
+![modify_add_and_status](./img/modify_add_and_status.png)
 
-As we can see, when we added th files again, Git was smart enough to know that we have only made changes to a pair fo files. The commit that we made after this only update that specific file and not the others.  
+As we can see, when we added the files again, Git was smart enough to know that we have only made changes to a one file. The commit that we made after this only update that specific file and not the others.  
 
 
 ## View Logs in Git
