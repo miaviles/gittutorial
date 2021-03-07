@@ -87,7 +87,7 @@ Git with **--global** option save this information for all the repositories in t
 
 ## Committing files in Git
 Now you can start building your project and adding files to your project directory that it is empty right now.  
-Once you have created and added files toyour project directory, you can add them to your local Git repo using.  
+Once you have created and added files to your project directory, you can add them to your local Git repo using.  
 
 **`$git add "file-name"`**
 
