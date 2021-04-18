@@ -1,2 +1,2 @@
 # gittutorial
-Get started with git for beginers
+Get started with git for beginners
