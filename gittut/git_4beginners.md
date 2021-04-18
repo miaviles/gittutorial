@@ -97,7 +97,7 @@ If you want to add more than one file at a time, use.
 
 We haven't added the files to the local repo yet. We have just told Git that some changes were made and we want save these changes in the next **commit/save**.  As of now, these added files are in a place called the **Staging area**.
 
-> * **Staging area** is an intermediate place between your working directory and local repo where any changes that you made can be reviewed before you actually commit them to the repo*.   
+> * **Staging area** is an intermediate place between your working directory and local repo where any changes that you made can be reviewed before you actually commit them to the repo.   
 
 ![staging area](./img/staging_area.png)   
 
@@ -125,11 +125,11 @@ Now all your files have been committed to the Git repo.  You can check the statu
 
 ![git status](./img/git_status_2.png)
 
-We are going to make a few changes to pair of files and commit it after the changes are made:  
+We are going to make a few changes to three of files and commit it after the changes are made:  
 
-![modify_add_and_status](./img/modify_add_and_status.png)
+![git_modify_add_commit](./img/git_modify_add_commit.png)
 
-As we can see, when we added the files again, Git was smart enough to know that we have only made changes to a one file. The commit that we made after this only update that specific file and not the others.  
+As we can see, when we added the files again, Git was smart enough to know that we have only made changes to a three of files. The commit that we made after this only update that specific file and not the others.  
 
 
 ## View Logs in Git
@@ -137,7 +137,7 @@ The whole point of version control is to keep a record of the changes that were 
 
 **`$git log`**   
 
-![View Log](./img/view_log.png)   
+![git log](./img/git_log.png)   
 
 As you can see, my name, email address, timestamp, and the commit messages are reflected in the logs. This makes it fairly easy to track who made what changes and determine when the bug was first introduced in the project.   
 
@@ -154,16 +154,19 @@ So let's create a remote repository!
 ![create_new_remote](./img/create_new_remote.png)  
 
 2. On the next page, give a name to your repository and a short description. Once you are done,click **Create repositiory**.
-![create_new_remote_public](./img/create_new_remote_public.png)   
+![create_new_remote_public](./img/create_new_remote_repo.png)  
+
 
 #### Add git remote to your repository
 
-Once you have created your Github repository, Github will prompt you to upload your files to the remote repo.
-![create_new_remote_repo_setup](./img/create_new_remote_repo_setup.png)  
+Once you have created your Github repository, Github will prompt you to upload your files to the remote repo.  
 
-As we have already created our local repository, we first need to sync our local and remote repos.  
-We can do this using **git remote add origin "URL"**  
-![sync_remote_repo](./img/sync_remote_repo.png)   
+> * As we have already created our local repository, we first need to **sync our local and remote repos**.   
+> * We can do this using **> git remote add origin "URL"**  
+
+![git_remote_add_origin_https](./img/git_remote_add_origin_https.png)    
+
+
 
 + The command creates a connection between the local and remote repos.  
 + Once we do that, we no longer have to refer to the remote repo by the URL every time.  
@@ -172,14 +175,17 @@ We can do this using **git remote add origin "URL"**
 
 #### Push using Git
 
-Now that the remote repo has been added, all you have to do is **push** your commits from local repo to the remote repo so that all your fellow developers can view the changes.  
+Now that the remote repo has been added, all you have to do is **push** your commits from local repo  
+to the remote repo so that all your fellow developers can view the changes.  
 
 You transfer the local repo to the remote repo on GitHub server using **git push -u origin "branch-name"**   
 
-![push_origin_master](./img/push_origin_master.png)   
+![git_push_origin_master](./img/git_push_origin_master.png)  
+
 
 *note: origin is the name of our remote repo*  
 
+Now all our fellow collaborators have access to this newly updated repository.  
 
 
 
